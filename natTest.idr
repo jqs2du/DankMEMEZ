@@ -104,4 +104,79 @@ y3: bool
 y3 = xorp (mkPair false false)
 
 b1: nat
-b1 = exp
+b1 = exp (mkPair v O)
+
+b2: nat
+b2 = exp (mkPair O O)
+
+b3: nat
+b3 = exp (mkPair v q)
+
+c1: bool
+c1 = lep (mkPair O v)
+
+c2: bool
+c2 = lep (mkPair v O)
+
+c3: bool
+c3 = lep (mkPair v v)
+
+c4: bool
+c4 = lep (mkPair v o)
+
+c5: bool
+c5 = lep (mkPair o v)
+
+d1: bool
+d1 = eqp (mkPair v o)
+
+d2: bool
+d2 = eqp (mkPair o v)
+
+d3: bool
+d3 = eqp (mkPair v v)
+
+e1: bool
+e1 = gtp (mkPair O v)
+
+e2: bool
+e2 = gtp (mkPair v O)
+
+e3: bool
+e3 = gtp (mkPair v o)
+
+e4: bool
+e4 = gtp (mkPair o v)
+
+e5: bool
+e5 = gtp (mkPair v v)
+
+f1: bool
+f1 = gep (mkPair O v)
+
+f2: bool
+f2 = gep (mkPair v O)
+
+f3: bool
+f3 = gep (mkPair v o)
+
+f4: bool
+f4 = gep (mkPair o v)
+
+f5: bool
+f5 = gep (mkPair v v)
+
+g1: bool
+g1 = ltp (mkPair O v)
+
+g2: bool
+g2 = ltp (mkPair v O)
+
+g3: bool
+g3 = ltp (mkPair v o)
+
+g4: bool
+g4 = ltp (mkPair o v)
+
+g5: bool
+g5 = ltp (mkPair v v)
