@@ -54,7 +54,7 @@ le (S n) (S m) = le n m
 eq: nat -> nat -> bool
 eq O O = true
 eq (S n) (S m) = eq n m
-eq (mkPair _ _) = false
+eq _ _ = false
 
 gt: nat -> nat -> bool
 gt m n = not (le (S m) (S n))
