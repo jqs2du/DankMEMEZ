@@ -1,11 +1,11 @@
 module list
 
-data list = nil | cons Nat list
+data list a = nil | cons (a) (list a)
 
-length: list -> Nat
+length: list a -> Nat
 length nil = 0
-length (cons (n) (cons m L)) =(S (length (cons m L)))
+length (cons n L) = 1 + length L
 
-append: list -> list -> list
+append: list a -> list a -> list a
 append nil L = L
 append (cons n L) (k) = cons (n) (append L k)
